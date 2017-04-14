@@ -1,5 +1,4 @@
 #!/bin/bash
-
 while true; do
 	GTX1080Ti_temperature=$(nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits)
 
@@ -225,8 +224,8 @@ while true; do
 			;;
 	esac
 
-	nvidia-settings -a "[gpu:0]/GPUFanControlState=1" 2>&1 >/dev/null
-	nvidia-settings -a "[fan-0]/GPUTargetFanSpeed=${fan_speed}" 2>&1 >/dev/null
+	nvidia-settings -a "[gpu:0]/GPUFanControlState=1" >/dev/null
+	nvidia-settings -a "[fan-0]/GPUTargetFanSpeed=${fan_speed}" >/dev/null
 
 	sleep 1s
 
