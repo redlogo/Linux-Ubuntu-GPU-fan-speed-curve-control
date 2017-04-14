@@ -16,5 +16,6 @@ fan-speed-curve-new-design.csv and fan-speed-curve-current.csv saves all the tem
 2. run in terminal 'python GPU-fan-control-tune-curve.py' to check if those changes in temperature-fan-speed curve is desired, a figure will be plotted (python matplotlib is required), and further tune the fan-speed-curve-new-design.csv and run the tune-curve.py again to get the desired results.
 ![alt tag](https://github.com/redlogo/Linux-Ubuntu-GPU-fan-speed-curve-control/blob/master/GPU-fan-control-tune-curve-figure.png)
 3. run in terminal 'python GPU-fan-control-deployment.py' to get the newer version of GPU-fan-control-execute.sh, at the same time, a figure of deployment conditions will be plotted (python matplotlib is required).
+![alt tag](https://github.com/redlogo/Linux-Ubuntu-GPU-fan-speed-curve-control/blob/master/GPU-fan-control-deployment-figure.png)
 4. GPU-fan-control-execute.sh is the bash command to tell GPU when to speed up fan-speed and when to slow down.
 5. hints: make the curve smooth will be much better than abrupt changes in fan-speed.
